@@ -1,0 +1,51 @@
+name:           SentryLib
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         smills
+
+library
+  hs-source-dirs:  src
+  build-depends:   
+                   base >= 4,
+                   lens,
+                   aeson,
+                   transformers,
+                   mtl,
+                   text,
+                   containers,
+                   template-haskell,
+                   derive,
+                   ghc-prim,
+                   array,
+                   random,
+                   gloss,
+                   distributed-process,
+                   network-transport-tcp,
+                   yesod,
+                   blaze_svg,
+                   diagrams-lib,
+                   diagrams-svg,
+                   data-memocombinators
+  ghc-options:     -Wall -ddump-splices -ddump-deriv
+  other-modules:   
+                   Maps,
+                   SentryDataTypes,
+                   TestStuff,
+                   SentryMaps,
+                   SentryTH,
+                   TemplateDefs,
+                   CameraActive,
+                   SentryPlay,
+                   GPlay,
+                   ExPlay,
+                   Ram,
+                   Test1,
+                   Ping,
+                   PingTest,
+                   Parser,
+                   Distrib,
+                   Junkie,
+                   Zink
+  extensions:      TemplateHaskell
+
